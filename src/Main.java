@@ -17,11 +17,6 @@ public class Main {
         m[2].hp = 10;
 
         for (Character member : c) {
-            member.hp += 50; // 全員のHPを回復
-            System.out.println(member.name + "を回復した！");
-        }
-
-        for (Character member : c) {
             for (Monster monster : m) {
                 member.attack(monster);
             }
